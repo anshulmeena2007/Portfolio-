@@ -773,3 +773,116 @@ section {
 .footer-social a {
   color: var(--white);
   font-size
+
+  /* ---------------------------------------
+   MOBILE RESPONSIVE FIXES
+---------------------------------------- */
+
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #0f172a;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 12px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hero Section */
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-image {
+    height: 250px;
+    margin-top: 20px;
+  }
+
+  .floating-card {
+    width: 130px;
+    height: 90px;
+  }
+
+  /* About Section */
+  .about-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Skills Section */
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Projects Section */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Education Section */
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .timeline-item {
+    padding-left: 50px;
+  }
+
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-dot {
+    left: 0px;
+  }
+
+  /* Contact Section */
+  .contact-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img, .project-card, .profile-img {
+  max-width: 100%;
+}
+  
+  
+
