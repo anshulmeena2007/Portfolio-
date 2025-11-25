@@ -772,7 +772,8 @@ section {
 
 .footer-social a {
   color: var(--white);
-  font-size
+  font-size: 1.2rem;
+}
 
   /* ---------------------------------------
    MOBILE RESPONSIVE FIXES
